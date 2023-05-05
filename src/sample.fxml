@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+
+
+<VBox fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@css/application.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PasswordStrengthCalculatorController">
+    <BorderPane prefHeight="200.0" prefWidth="200.0">
+
+
+        <center>
+            <Label id="reasonsLabel" fx:id="reasonsLabel" alignment="TOP_CENTER" contentDisplay="TOP" prefHeight="200.0" prefWidth="585.0" text="" translateX="123.0" translateY="-19.0" />
+        </center>
+
+    </BorderPane>
+    <BorderPane fx:id="rootPane" prefHeight="80.0" prefWidth="1280.0" stylesheets="@css/application.css" translateY="1.0" VBox.vgrow="NEVER">
+        <top>
+            <Label fx:id="strengthLabel" styleClass="strength-level-1" textFill="WHITE" translateY="1.0" BorderPane.alignment="CENTER">
+                <font>
+                    <Font size="24.0" />
+                </font>
+            </Label>
+        </top>
+        <right>
+            <Label fx:id="recommendLabel" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="96.0" prefWidth="379.0" text="" textFill="#d01717" translateX="-36.0" translateY="26.0" BorderPane.alignment="CENTER" />
+        </right>
+    </BorderPane>
+    <TextField fx:id="passwordField" alignment="CENTER" promptText="Enter password here..." stylesheets="@css/application.css" translateY="-42.0">
+        <VBox.margin>
+            <Insets top="20.0" />
+        </VBox.margin>
+        <font>
+            <Font name="Helvetica Neue" size="26.0" />
+        </font>
+        <rotationAxis>
+            <Point3D />
+        </rotationAxis>
+    </TextField>
+    <Button id="copyButton" fx:id="copyButton" alignment="CENTER" onAction="#copyToClipboard" text="Copy to Clipboard" textFill="#f50c0c" translateY="-42.0">
+        <VBox.margin>
+            <Insets top="20.0" />
+        </VBox.margin>
+    </Button>
+
+    <Button fx:id="generatePasswordButton" alignment="CENTER" onAction="#generatePassword" text="Generate Password" translateY="-42.0">
+        <VBox.margin>
+            <Insets top="20.0" />
+        </VBox.margin>
+    </Button>
+
+    <Button alignment="CENTER" onAction="#imageToPassword" text="Image to Password" translateY="-42.0">
+        <VBox.margin>
+            <Insets top="20.0" />
+        </VBox.margin>
+    </Button>
+
+    <Label fx:id="copiedLabel" alignment="CENTER" text="Password copied to clipboard!" textFill="#f50c0c" translateY="-42.0" visible="false">
+        <VBox.margin>
+            <Insets top="20.0" />
+        </VBox.margin>
+    </Label>
+    <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" translateY="-37.0">
+        <image>
+            <Image url="@Image/ug.png" />
+        </image>
+    </ImageView>
+</VBox>

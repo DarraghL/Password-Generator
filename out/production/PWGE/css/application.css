@@ -1,0 +1,136 @@
+.root {
+    -fx-background-image: url("file:/C:/Users/darra/IdeaProjects/PWGE/src/Image/bg.png");
+    -fx-background-size: cover;
+    -fx-alignment: center;
+
+}
+
+#button-container {
+    -fx-alignment: center;
+}
+
+
+/* Button style */
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-background-radius: 25px;
+    -fx-border-radius: 25px;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 10px 20px;
+}
+
+/* Hover effect */
+.button:hover {
+    -fx-background-color: #3e8e41;
+}
+
+/* Pressed effect */
+.button:pressed {
+    -fx-background-color: #2e6330;
+}
+
+/* Disable effect */
+.button:disabled {
+    -fx-opacity: 0.5;
+}
+
+
+
+/* Disable effect */
+.text-field:disabled {
+    -fx-opacity: 0.5;
+}
+
+#passwordField {
+    -fx-max-width: 400px; /* set maximum width */
+    -fx-prompt-text-fill: grey; /* set the color of the prompt text */
+    -fx-prompt-text-font-size: 14px; /* set the font size of the prompt text */
+    -fx-prompt-text: "Enter Password"; /* set the prompt text */
+    -fx-pref-height: 60px; /* set the preferred height of the text box */
+    -fx-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* set the font family */
+    -fx-font-size: 22px; /* set the font size */
+}
+
+
+
+
+#strengthLabel {
+
+.strength-level-0 {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.8) , 0,0,2,2 );
+}
+
+
+.strength-level-1 {
+    -fx-text-fill: red;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 0, 0, 2, 2);
+}
+
+.strength-level-2 {
+    -fx-text-fill: orange ;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 0, 0, 2, 2);
+}
+
+.strength-level-3 {
+    -fx-text-fill: yellow;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 0, 0, 2, 2);
+}
+
+.strength-level-4 {
+    -fx-text-fill: #00ff73;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 0, 0, 2, 2);
+}
+
+.strength-level-5 {
+    -fx-text-fill: rgb(57, 255, 20);
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 0, 0, 2, 2);
+}
+
+
+
+}
+
+#reasonsLabel {
+    -fx-font-size: 16px;
+    -fx-text-fill: #FFA500; /* Amber color */
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER_LEFT;
+}
+#copiedLabel {
+  -fx-font-size: 16px;
+  -fx-font-weight: bold;
+  -fx-text-fill: white;
+  -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.8) , 0,0,2,2 );
+}
+#recommendLabel {
+
+-fx-font-size: 16px;
+-fx-font-weight: bold;
+
+
+
+}
+
+.recommend-label {
+    -fx-text-fill: green;
+}
+
+.not-recommend-label {
+    -fx-text-fill: red;
+}
+
+
+
+
+
+
+
+
